@@ -129,6 +129,17 @@ h1 {
 	transition: all linear 0.2s;
 }
 
+#form_contato button {
+	background: var(--main-logo-color);
+	border-color: var(--main-logo-color);
+	color: #fff;
+}
+
+#form_contato button:hover {
+	background: transparent;
+	color: var(--main-logo-color);
+}
+
 @media screen and (max-width: 640px) {
 	#title_home_parallax h1 {
 		font-size: 24pt;

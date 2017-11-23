@@ -245,7 +245,7 @@
 						<p><span uk-icon="icon: location; ratio: 1.5"></span> Rua Exemplo, número 0000, Exemplo, Exemplo/EX</p>
 					</div>
 				</div>
-				<form class="uk-grid-small uk-width-1-2@s" uk-grid>
+				<form method="post" action="javascript:void(0)" id="form_contato" class="uk-grid-small uk-width-1-2@s" uk-grid>
 					<legend class="uk-legend">Envie-nos uma mensagem</legend>
 
 					<div class="uk-width-1-1@m">
@@ -261,10 +261,10 @@
 						<textarea class="uk-textarea" rows="5" placeholder="Sua mensagem"></textarea>
 					</div>
 					<div class="uk-width-1-2@m">
-						<button class="uk-button uk-button-default">Enviar</button>
+						<button class="uk-button uk-button-default uk-width-1-1" type="submit">Enviar</button>
 					</div>
 					<div class="uk-width-1-2@m">
-						<button class="uk-button uk-button-default">Limpar</button>
+						<button class="uk-button uk-button-default uk-width-1-1" type="reset">Limpar</button>
 					</div>
 				</form>
 			</div>
