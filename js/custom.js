@@ -18,7 +18,29 @@ $(document).ready(function () {
 			$(header).removeClass("dshadow");
 			$(header).css("height", "auto");
 		}
-	})
+	});
+
+	$("#form_contato").submit(function () {
+		var message_config = {
+			1: {
+				type: "success",
+				title: "Mensagem enviada com sucesso!"
+			},
+			0: {
+				type: "error",
+				title: "Erro ao enviar a mensagem"
+			}
+		}
+		, result = 1
+		;
+
+		swal({
+			title: message_config[result]["title"],
+			type: message_config[result]["type"],
+			timer: 3000,
+			showConfirmButton: false
+		});
+	});
 })
 
 function initSlideshow ()
