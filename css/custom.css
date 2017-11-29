@@ -2,7 +2,8 @@
 
 :root {
   /*--main-logo-color: #FFA061;*/
-  --main-logo-color: #f45858;
+  /*--main-logo-color: #f45858;*/
+  --main-logo-color: #ED3237;
 }
 
 .bg-krolow {
@@ -23,7 +24,8 @@ h1 {
 
 .uk-logo img {
 	position: relative;
-	width: 150px;
+    width: auto;
+    max-height: 60%;
 }
 
 .uk-navbar-container.uk-navbar {
@@ -34,6 +36,14 @@ h1 {
 
 .uk-card-default .uk-card-title {
 	color: var(--main-logo-color);
+}
+
+#title_home_parallax {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 99;
 }
 
 #title_home_parallax p {
